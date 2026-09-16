@@ -42,3 +42,14 @@ Quick way from the terminal, run inside this folder:
 ## Custom domain (optional)
 
 In the Pages project, open Custom domains, click Set up a custom domain, and enter your domain. If the domain is already on Cloudflare the DNS record is added for you.
+
+## Current deployments
+
+- Cloudflare (Workers static assets, account Elinaaffchoice@gmail.com): https://digital-marketing-site.elinaaffchoice.workers.dev
+- GitHub Pages (whitematchmarketing): https://whitematchmarketing.github.io/digital-marketing-site/
+
+To redeploy on Cloudflare after edits, with the token from `~/CLAUDE/outfit-styler-v2/.env` exported as `CLOUDFLARE_API_TOKEN` and `CLOUDFLARE_ACCOUNT_ID`:
+
+    npx wrangler deploy
+
+To redeploy on GitHub Pages, just `git push`.
